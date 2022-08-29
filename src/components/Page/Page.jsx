@@ -32,7 +32,9 @@ const Page = ({children}) => {
                 <Dropdown>
                   <Dropdown.Toggle variant='dark'>Profile <span><CgProfile className='text-warning' size='24px' /></span></Dropdown.Toggle>
                   <Dropdown.Menu>
+                    <Dropdown.Item as={NavLink} to="/profile">profile</Dropdown.Item>
                     <Dropdown.Item as={NavLink} to="/saved">saved</Dropdown.Item>
+                    <Dropdown.Item as={NavLink} to="/upload">upload</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
                 :
