@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
 import { CgProfile } from 'react-icons/cg';
 import { FaMotorcycle } from 'react-icons/fa';
 
 import './Page.css';
+import AppContext from '../../context/AppContext';
 
 
 const Page = ({children}) => {
+  const { userData } = useContext(AppContext);
 
   return (
     <div>
@@ -25,13 +27,21 @@ const Page = ({children}) => {
               <li><NavLink to="/about" className="nav-link px-2 text-light">About</NavLink></li>
             </ul>
 
-            <Dropdown>
-              <Dropdown.Toggle variant='dark'>Profile <span><CgProfile className='text-warning' size='24px' /></span></Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item as={NavLink} to="/login">login</Dropdown.Item>
-                <Dropdown.Item as={NavLink} to="/sign-up">sign-up</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+            {
+              userData?
+                <Dropdown>
+                  <Dropdown.Toggle variant='dark'>Profile <span><CgProfile className='text-warning' size='24px' /></span></Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item as={NavLink} to="/saved">saved</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+                :
+                <div>
+                  <NavLink to="/saved" className="btn me-2 text-light">saved</NavLink>
+                  <NavLink to="/login" className="btn btn-outline-light me-2">Login</NavLink>
+                  <NavLink to="/sign-up" className="btn btn-warning">Sign-up</NavLink>
+                </div>
+            }
 
           </div>
         </div>
