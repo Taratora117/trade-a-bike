@@ -20,9 +20,9 @@ const Page = ({children}) => {
             </NavLink>
 
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><NavLink to="/search" className="nav-link px-2 text-secondary">New Search</NavLink></li>
-              <li><NavLink to="/categories" className="nav-link px-2 text-secondary">Categories</NavLink></li>
-              <li><NavLink to="/about" className="nav-link px-2 text-secondary">About</NavLink></li>
+              <li><NavLink to="/search" className="nav-link px-2 text-light">New Search</NavLink></li>
+              <li><NavLink to="/categories" className="nav-link px-2 text-light">Categories</NavLink></li>
+              <li><NavLink to="/about" className="nav-link px-2 text-light">About</NavLink></li>
             </ul>
 
             <Dropdown>
