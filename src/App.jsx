@@ -17,7 +17,7 @@ function App() {
     <AppContext.Provider value={{...appState, setContext: setAppState}}>
       <Routes>
         <Route index element={<Navigate replace to="home" />} />
-        <Route path="home" element={<Page><Home /></Page>} />
+        <Route path="/home" element={<Page><Home /></Page>} />
         <Route path="*" />
       </Routes>
     </AppContext.Provider>
