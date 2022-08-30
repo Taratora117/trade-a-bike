@@ -17,7 +17,7 @@ const Page = ({children}) => {
         <div className="container">
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
-            <NavLink to="/home" className="d-flex align-items-center justify-content-center p-2 mb-2 mb-lg-0 rounded-circle text-warning">
+            <NavLink to="/home" className="d-flex align-items-center justify-content-center p-2 mb-2 mb-lg-0 text-warning">
               <FaMotorcycle size="3rem" />
             </NavLink>
 
@@ -32,14 +32,14 @@ const Page = ({children}) => {
                 <Dropdown>
                   <Dropdown.Toggle variant='dark'>Profile <span><CgProfile className='text-warning' size='24px' /></span></Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item as={NavLink} to="/profile">profile</Dropdown.Item>
-                    <Dropdown.Item as={NavLink} to="/saved">saved</Dropdown.Item>
-                    <Dropdown.Item as={NavLink} to="/upload">upload</Dropdown.Item>
+                    <Dropdown.Item as={NavLink} to="/profile">Profile</Dropdown.Item>
+                    <Dropdown.Item as={NavLink} to="/saved">Saved</Dropdown.Item>
+                    <Dropdown.Item as={NavLink} to="/upload">Upload</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
                 :
                 <div>
-                  <NavLink to="/saved" className="btn me-2 text-light">saved</NavLink>
+                  <NavLink to="/saved" className="btn me-2 text-light">Saved</NavLink>
                   <NavLink to="/login" className="btn btn-outline-light me-2">Login</NavLink>
                   <NavLink to="/sign-up" className="btn btn-warning">Sign-up</NavLink>
                 </div>
