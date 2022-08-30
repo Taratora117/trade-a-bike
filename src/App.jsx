@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Search from './pages/Search';
 import Categories from './pages/Categories';
+import Saved from './pages/Saved';
 
 function App() {
   const [appState, setAppState] = useState({
@@ -24,6 +25,7 @@ function App() {
         <Route path="/home" element={<Page><Home /></Page>} />
         <Route path="/search" element={<Page><Search /></Page>} />
         <Route path="/categories" element={<Page><Categories /></Page>} />
+        <Route path="/saved" element={<Page><Saved /></Page>} />
         <Route path="/login" element={<Page><Login /></Page>} />
         <Route path="/register" element={<Page><Register /></Page>} />
         <Route path="*" />
