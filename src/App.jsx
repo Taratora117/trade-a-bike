@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
+// Pages
 import Home from './pages/Home';
-
-import './App.css';
 import Page from './components/Page/Page';
 import AppContext from './context/AppContext';
 import Login from './pages/Login';
@@ -11,6 +10,9 @@ import Register from './pages/Register';
 import Search from './pages/Search';
 import Categories from './pages/Categories';
 import Saved from './pages/Saved';
+
+import './App.css';
+
 
 function App() {
   const [appState, setAppState] = useState({
@@ -35,4 +37,3 @@ function App() {
 }
 
 export default App;
-
