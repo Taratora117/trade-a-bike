@@ -8,6 +8,7 @@ import Page from './components/Page/Page';
 import AppContext from './context/AppContext';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Search from './pages/Search';
 
 function App() {
   const [appState, setAppState] = useState({
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route index element={<Navigate replace to="home" />} />
         <Route path="/home" element={<Page><Home /></Page>} />
+        <Route path="/search" element={<Page><Search /></Page>} />
         <Route path="/login" element={<Page><Login /></Page>} />
         <Route path="/register" element={<Page><Register /></Page>} />
         <Route path="*" />
