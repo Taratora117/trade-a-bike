@@ -53,7 +53,52 @@ const Page = ({children}) => {
         {children}
       </div>
 
-      <footer></footer>
+      <footer className="container-fluid text-bg-dark p-5">
+        <div className="row">
+          <div className="col pb-2">
+            <NavLink to="/home" className="d-flex align-items-center p-2 mb-2 mb-lg-0 text-warning">
+              <FaMotorcycle size="3rem" />
+            </NavLink>
+            <p className="text-muted">&copy; 2022</p>
+          </div>
+
+          <div className="col pb-2"></div>
+
+          <div className="col pb-2">
+            <h5>Section</h5>
+            <ul className="nav flex-column">
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+
+          <div className="col pb-2">
+            <h5>Section</h5>
+            <ul className="nav flex-column">
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+
+          <div className="col pb-2">
+            <h5>Section</h5>
+            <ul className="nav flex-column">
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
+              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </footer>
 
     </div>
   );
