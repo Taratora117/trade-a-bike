@@ -41,7 +41,7 @@ const Page = ({children}) => {
                 <div>
                   <NavLink to="/saved" className="btn me-2 text-light">Saved</NavLink>
                   <NavLink to="/login" className="btn btn-outline-light me-2">Login</NavLink>
-                  <NavLink to="/sign-up" className="btn btn-warning">Sign-up</NavLink>
+                  <NavLink to="/register" className="btn btn-warning">Register</NavLink>
                 </div>
             }
 
