@@ -16,6 +16,8 @@ const Register = () => {
     <div className='container w-50 p-5'>
       <Form onSubmit={submitHandler} className='p-5 border border-5 border-warning rounded bg-secondary'>
 
+        <h1 className='mb-5'>Register</h1>
+
         <Form.Group className="mb-3">
           <Form.Label>First Name:</Form.Label>
           <Form.Control type="email" placeholder="Email" required value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
