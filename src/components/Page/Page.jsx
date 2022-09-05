@@ -49,7 +49,7 @@ const Page = ({children}) => {
         </div>
       </header>
 
-      <div>
+      <div className='bg-white'>
         {children}
       </div>
 
